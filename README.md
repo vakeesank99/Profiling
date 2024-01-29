@@ -1,6 +1,8 @@
 # Profiling for 1000000 integer sum
 Profiling is most critical part when it comes to the in depth understanding of computer architecture. even though it's good practice to start from the VM box or related virtual machines for linux. but rather i tried the Windows Subsystem for Linux(WSL) in windows 11 os. hope you can follow the steps below. if you have already done the WSL part kind check out the **Profiling**. 
-
+## 0. Git clone
+Kindly follow the basic of git from [https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup]\
+`git clone https://github.com/vakeesank99/Profiling.git`
 ## 1. WSL
 ```
 wsl --install -d ubuntu
