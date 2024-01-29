@@ -64,13 +64,13 @@ then run the file
 ## 2.Profiling
 ### GPROF
 compile for open text file and save the answers in a text file.\
-`gcc -pg -o main.out main.c -DCREATE_TEXT -DTEXT`\
+`gcc -pg -o main.out main.c -DCREATE_TEXT -DTEXT`
 
 then run using\
 `./main.out`
 
 generate profiling files\
- `gprof main.out gmon.out > gprof_text_analysis.txt`\
+ `gprof main.out gmon.out > gprof_text_analysis.txt`
 likewise for bin\
 ```
 	gcc -pg -o main.out main.c -DCREATE_BIN -DBIN
@@ -96,7 +96,7 @@ make -j8
 sudo cp perf /usr/local/bin
 ```
 
-for activate several settings tab do the below code\
+for activate several settings tab do the code below\
 `sudo sysctl kernel.perf_event_paranoid=-1`
 
 record the events\
@@ -180,7 +180,7 @@ Performance counter stats for './main.out dd if=/dev/zero of=/dev/null count=100
 
        0.262352000 seconds user
        0.322894000 seconds sys
-       ```
+```
 #### Binary
 Performance counter stats for './main.out dd if=/dev/zero of=/dev/null count=100000':
 ```
@@ -221,7 +221,7 @@ Performance counter stats for './main.out dd if=/dev/zero of=/dev/null count=100
 
        0.342683000 seconds user
        0.010078000 seconds sys
-       ```
+```
 ## References
 1. [https://perf.wiki.kernel.org/index.php/Tutorial#Collecting_samples]
 2. [https://hackingcpp.com/cpp/tools/profilers.html]
